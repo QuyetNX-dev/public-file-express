@@ -1,0 +1,9 @@
+extends ../layouts/common.pug
+block content
+  div
+    form(action="/users/post" method="POST")
+      div
+        p(style="margin-bottom: 5px") Name:
+        input.form-control(type="text" name="name")
+      div(style="margin-top: 16px")
+        button.btn.btn-info Thêm
